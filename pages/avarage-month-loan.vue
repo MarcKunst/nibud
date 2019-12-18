@@ -10,18 +10,18 @@
       </h2>
       <div class="links">
         <a
-          href="avarage-month-loan"
+          href="https://nuxtjs.org/"
           target="_blank"
           class="button--green"
         >
-          Verkennen
+          Documentation
         </a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey"
         >
-          Begroting
+          GitHub
         </a>
       </div>
     </div>
@@ -46,6 +46,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: firebrick;
 }
 
 .title {
