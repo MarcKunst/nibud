@@ -1,27 +1,19 @@
 <template>
   <section class="container">
     <div>
-      <logo />
       <h1 class="title">
-        Stubu
+        Hoe hoog is je huidige studieschuld nu?
       </h1>
       <h2 class="subtitle">
         A budget tool for students with a student debt
       </h2>
       <div class="links">
         <a
-          href="landing"
+          href="#"
           target="_blank"
-          class="button--green"
+          class="button--white"
         >
-          Start
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          Begroting
+          Studieschuld
         </a>
       </div>
     </div>
@@ -46,6 +38,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: #EF7A52;
 }
 
 .title {
@@ -54,14 +47,14 @@ export default {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: #FDFDFD;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: #FDFDFD;
   word-spacing: 5px;
   padding-bottom: 15px;
 }

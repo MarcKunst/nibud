@@ -1,27 +1,19 @@
 <template>
   <section class="container">
     <div>
-      <logo />
       <h1 class="title">
-        Stubu
+        Landing
       </h1>
       <h2 class="subtitle">
         A budget tool for students with a student debt
       </h2>
       <div class="links">
         <a
-          href="landing"
+          href="loan"
           target="_blank"
           class="button--green"
         >
-          Start
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          Begroting
+          Hoeveel leen jij?
         </a>
       </div>
     </div>
@@ -46,6 +38,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: #ffffff;
 }
 
 .title {
