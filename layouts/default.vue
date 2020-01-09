@@ -17,16 +17,6 @@ html {
   box-sizing: border-box;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 2rem;
-  color: #FDFDFD;
-  letter-spacing: 1px;
-}
-
 *,
 *:before,
 *:after {
@@ -61,19 +51,5 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
-
-.button--white {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #FDFDFD;
-  color: #FDFDFD;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--white:hover {
-  color: #3b3b3b;
-  background-color: #FDFDFD;
 }
 </style>
