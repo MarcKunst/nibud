@@ -1,25 +1,22 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/">back</nuxt-link>
+        <nuxt-link class="button--blank"  to="/current_debt">back</nuxt-link>
       </nav>
-      <h1>Studieschuld</h1>
-      <Counter />
-      <Slider />
-      <nuxt-link class="next-button"  to="/current_debt">
-        <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-      </nuxt-link>
+      <h1>Hoelang verwacht je dat je studie nog duurt?</h1>
+      <SelectDuration />
+        <nuxt-link class="next-button"  to="/graduate">
+            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+        </nuxt-link>
   </section>
 </template>
 
 <script>
-import Counter from '~/components/Counter.vue'
-import Slider from '~/components/Slider.vue'
+import SelectDuration from '~/components/SelectDuration.vue'
 
 export default {
   components: {
-    Counter,
-    Slider
+    SelectDuration
   }
 }
 </script>
@@ -30,7 +27,7 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#860034, #BA84A7);
+  background: linear-gradient(#3780AB, #9DAEB6);
   padding: 0 2rem;
 }
 
@@ -56,4 +53,5 @@ nav>a {
     width: 12rem;
     margin: 0 auto;
 }
+
 </style>

@@ -5,18 +5,22 @@
         Stubu
       </h1>
       <h2 class="subtitle">
-        Zorgeloos studeren
+        Studentenbudget
       </h2>
-      <p class="intro-text">
-        He jij daar! Maak jij je ook wel eens zorgen als student over die berg van een studieschuld?
-        Don't worry, Stubu - Studentbudget - got your back!
-      </p>
-      <div class="links">
-        <nuxt-link class="button--orange"  to="/loan">Let's go</nuxt-link>
+        <nuxt-link to="/loan">
+          <img class="start-button-img" src="../assets/landingpage-arrow.png" alt="start button">
+        </nuxt-link>
+      <div class="nav-container">
+        <nav>
+          <nuxt-link class="to-budget"  to="#">
+            <img class="nav-img" src="../assets/calculator.png" alt="to budget page">
+          </nuxt-link>
+          <nuxt-link class="to-stories"  to="#">
+            <img class="nav-img" src="../assets/dude.png" alt="to stories page">
+          </nuxt-link>
+        </nav>
       </div>
-      <div class="links">
-        <nuxt-link class="button--blank"  to="#">Begroting berekenen</nuxt-link>
-      </div>
+
     </div>
   </section>
 </template>
@@ -28,60 +32,38 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  background: #fdfdfd;
+  background: linear-gradient(#000000, #4C7992);
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 600;
-  font-size: 3rem;
-  color: #35495e;
-  letter-spacing: 1px;
-  margin-top: 3rem;
+  font-size: 8rem;
+  margin-top: 8rem;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 1rem;
-  color: #526488;
-  word-spacing: 3px;
-  padding-bottom: 3rem;
+  font-family: 'Bangers', cursive;
+  font-size: 2.8rem;
+  color: #fdfdfd;
+  text-align: center;
 }
 
-.intro-text {
-  display: block;
+.start-button-img {
+  width: 18rem;
+}
+
+.nav-container{
+  position: fixed;
+  bottom: 0;
   width: 80%;
-  text-align: left;
-  color: #434F94;
-  margin: 0 auto;
-  font-weight: 500;
-  font-size: 0.9rem;
-  word-spacing: 2px;
 }
 
-.links {
-  padding-top: 15px;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.button--orange {
-  display: inline-block;
-  border-radius: 50px;
-  background-color: #EF7A52;
-  color: #fdfdfd;
-  text-decoration: none;
-  padding: 0.7rem 3rem;
-}
-
-.button--orange:hover {
-  color: #fdfdfd;
-  background-color: #70331f;
-}
-
-.button--blank {
-  color: #2c2c2c;
-  text-decoration: none;
-  padding: 0.7rem 3rem;
+.nav-img {
+  width: 8rem;
 }
 </style>

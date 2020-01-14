@@ -5,9 +5,10 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -15,6 +16,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem;
+  color: #fdfdfd;
+  text-align: center;
 }
 
 *,
@@ -52,4 +60,26 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.button--orange {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #EF7A52;
+  color: #fdfdfd;
+  text-decoration: none;
+  padding: 0.7rem 3rem;
+  text-align: center;
+}
+
+.button--orange:hover {
+  color: #fdfdfd;
+  background-color: #70331f;
+}
+
+.button--blank {
+  color: #2c2c2c;
+  text-decoration: none;
+  padding: 0.7rem 3rem;
+}
+
 </style>

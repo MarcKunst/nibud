@@ -1,13 +1,13 @@
 <template>
     <div id="debt-container">
-      <p class="default--white">
-        Dit is hoe hoog de huidige studieschulden zijn. Hoe hoog is jouw schuld op dit moment?
-      </p>
-      <h1 class="debt-text">
-        Schulden placeholder
-      </h1>
     </div>
 </template>
+
+<script>
+export default {
+
+}
+</script>
 
 <style scoped>
 #debt-container {

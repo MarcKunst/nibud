@@ -1,25 +1,46 @@
 <template>
     <div id="counter-container">
-      <p class="loan-info-text">
-        Wist je dat de gemiddelde student
-      </p>
-      <h1 class="loan-average">
-        &euro;542
-      </h1>
-      <p class="loan-info-text">
-        per maand leent
+        <p class="loan-info-text">
+            Wist je dat de gemiddelde student
+        </p>
+        <animated-number class="loan-average"
+        :value="value" 
+        :formatValue="formatToPrice" 
+        :duration="1000"
+        />
+        <p class="loan-info-text">
+        leent per maand?
       </p>
     </div>
 </template>
 
+<script>
+import AnimatedNumber from "animated-number-vue";
+
+export default {
+  components: {
+    AnimatedNumber
+  },
+  data() {
+    return {
+      value: 560
+    }
+  },
+  methods: {
+    formatToPrice(value) {
+      return `&euro; ${value.toFixed()}`;
+    }
+  }
+};
+</script>
+
 <style scoped>
 #counter-container {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .loan-info-text {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 1rem;
@@ -27,9 +48,9 @@
 }
 
 .loan-average {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
     font-size: 3rem;
+    font-weight: 600;
     color: #fdfdfd;
 }
 </style>
