@@ -1,7 +1,7 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/current_debt">
+        <nuxt-link class="button--blank"  to="/debt-result">
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
          </nav>
@@ -12,7 +12,7 @@
         <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
             <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="100%" height="100%" style="position:absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
-        <nuxt-link class="next-button"  to="/budget-intro">
+        <nuxt-link class="next-button"  to="/budget-form">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
   </section>
