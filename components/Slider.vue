@@ -12,7 +12,10 @@
             min="0"
             max="1000"
             step="10"
-            v-model="sliderValue">
+            v-model="sliderValue"
+            :value="loanValue"
+        >
+        
         </range-slider>
         <div id="value-container">
             <p class="value-text">&euro;{{sliderValue}}</p>
@@ -29,13 +32,18 @@ import 'vue-range-slider/dist/vue-range-slider.css'
 
 export default {
     data () {
-    return {
-      sliderValue: ""
+        return {
+        sliderValue: ""
+        }
+    },
+    components: {
+        RangeSlider
+    },
+    methods: {
+        storeLoan(loanValue) {
+            this.$store.commit('setLoan', e.target.value)
+        }
     }
-  },
-  components: {
-    RangeSlider
-  }
 }
 </script>
 
