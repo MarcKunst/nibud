@@ -11,7 +11,7 @@
           <img class="start-button-img" src="../assets/landingpage-arrow.png" alt="start button">
         </nuxt-link>
       <div class="nav-container">
-        <nav>
+        <nav id="home-nav">
           <nuxt-link class="to-budget"  to="#">
             <img class="nav-img" src="../assets/calculator.png" alt="to budget page">
           </nuxt-link>
@@ -57,7 +57,7 @@
   width: 80%;
 }
 
-nav {
+#home-nav {
   width: 100%;
   display: flex;
   justify-content: space-between;

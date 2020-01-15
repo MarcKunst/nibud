@@ -82,4 +82,20 @@ h1 {
   padding: 0.7rem 3rem;
 }
 
+.back-button-img {
+  width: 3rem;
+}
+
+nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+}
+
+nav>a {
+    padding: 1.5rem 0;
+}
+
 </style>

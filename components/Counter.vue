@@ -36,15 +36,16 @@ export default {
 
 <style scoped>
 #counter-container {
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .loan-info-text {
-  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #fdfdfd;
+    font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fdfdfd;
+    text-align: center;
 }
 
 .loan-average {
@@ -52,5 +53,7 @@ export default {
     font-size: 3rem;
     font-weight: 600;
     color: #fdfdfd;
+    text-align: center;
+    display: block;
 }
 </style>

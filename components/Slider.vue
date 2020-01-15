@@ -50,14 +50,22 @@ h2 {
 
 #value-container {
     display: flex;
+    position: relative;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 0;
+    height: 10rem;
+    background-image: url(../assets/powblauw.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .value-text {
     font-family: 'Bangers', cursive;
     font-size: 2.5rem;
     color: #fdfdfd;
+    position: absolute;
+    top: 3.6rem;
 }
 
 p.default--white{

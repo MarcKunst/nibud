@@ -1,7 +1,9 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/">back</nuxt-link>
+        <nuxt-link class="button--blank"  to="/">
+            <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
+        </nuxt-link>
       </nav>
       <h1>Studieschuld</h1>
       <Counter />
@@ -32,14 +34,6 @@ export default {
   flex-direction: column;
   background: linear-gradient(#860034, #BA84A7);
   padding: 0 2rem;
-}
-
-nav {
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: left;
-    justify-items: center;
 }
 
 nav>a {

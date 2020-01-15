@@ -1,10 +1,12 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/loan">back</nuxt-link>
+        <nuxt-link class="button--blank"  to="/loan">
+          <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
+        </nuxt-link>
       </nav>
       <h1>Studieschuld</h1>
-      <DebtSelect />
+      <DebtChart />
       <nuxt-link class="next-button"  to="/graduate">
         <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
       </nuxt-link>
@@ -12,11 +14,16 @@
 </template>
 
 <script>
-import DebtSelect from '~/components/DebtSelect.vue'
+import DebtChart from '~/components/CurrentDebtChart.vue'
 
 export default {
+  data() {
+    return {
+      hover: false
+    }
+  },
   components: {
-    DebtSelect
+    DebtChart
   }
 }
 </script>
@@ -29,14 +36,6 @@ export default {
   flex-direction: column;
   background: linear-gradient(#4C5896, #8B94BA);
   padding: 0 2rem;
-}
-
-nav {
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: left;
-    justify-items: center;
 }
 
 nav>a {
@@ -53,4 +52,13 @@ nav>a {
     width: 12rem;
     margin: 0 auto;
 }
+
+.next-button-img:hover {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
 </style>
