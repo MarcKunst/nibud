@@ -12,39 +12,42 @@
             min="0"
             max="1000"
             step="10"
-            v-model="sliderValue"
-            :value="loanValue"
+            v-model="poepie"
+            @change="poepieHandler"
+
         >
         
         </range-slider>
         <div id="value-container">
-            <p class="value-text">&euro;{{sliderValue}}</p>
+            <p class="value-text">&euro;{{poepie}}</p>
         </div>
-        <!-- <div class="slidecontainer">
-            <input type="range" min="0" max="800" value="50" class="slider" id="myRange">
-        </div> -->
     </div>
 </template>
 
 <script type="text/javascript">
 import RangeSlider from 'vue-range-slider'
 import 'vue-range-slider/dist/vue-range-slider.css'
+import { mapGetters } from 'vuex'
+
 
 export default {
     data () {
         return {
-        sliderValue: ""
+        sliderValue: "",
+        poepie: 0
         }
     },
     components: {
         RangeSlider
     },
+    computed: {
+        ...mapGetters(['loanValue'])
+    },
     methods: {
-        storeLoan(loanValue) {
-            this.$store.commit('setLoan', e.target.value)
+        poepieHandler() {
+            this.$store.dispatch('setLoan', this.poepie)
         }
-    }
-}
+}}
 </script>
 
 <style scoped>

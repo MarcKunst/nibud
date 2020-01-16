@@ -2,55 +2,43 @@
     <div id="duration-container">
         <ul class="donate-now">
             <li>
-    <input type="radio" id="a25" value="6" name="duration" v-model="picked" />
-    <label for="a25">Een half jaar</label>
+    <input type="radio" id="6months" value="6" name="duration" @input="updateDuration"/>
+    <label for="6months">Een half jaar</label>
   </li>
   <li>
-    <input type="radio" id="a50" value="12" name="duration" v-model="picked" />
-    <label for="a50">1 jaar</label>
+    <input type="radio" id="12months" value="12" name="duration" @input="updateDuration" />
+    <label for="12months">1 jaar</label>
   </li>
   <li>
-    <input type="radio" id="a75" value="24" name="duration" checked="checked" v-model="picked" />
-    <label for="a75">2 jaar</label>
+    <input type="radio" id="24months" value="24" name="duration" @input="updateDuration" />
+    <label for="24months">2 jaar</label>
   </li>
   <li>
-    <input type="radio" id="a100" value="36" name="duration" v-model="picked" />
-    <label for="a100">3 jaar</label>
+    <input type="radio" id="36months" value="36" name="duration" @input="updateDuration" />
+    <label for="36months">3 jaar</label>
   </li>
   <li>
-    <input type="radio" id="other" value="48" name="duration" v-model="picked" />
-    <label for="other">4 jaar</label>
+    <input type="radio" id="48months" value="48" name="duration" @input="updateDuration" />
+    <label for="48months">4 jaar</label>
   </li>
-  <span>Picked: {{ picked }}</span>
 </ul>
-        <!-- <form id="duration-form">
-            <input type="radio" id="one" value="6" name="duration" v-model="picked">
-            <label for="one">Een half jaar</label>
-            <br>
-            <input type="radio" id="two" value="12" name="duration" v-model="picked">
-            <label for="two">1 jaar</label>
-            <br>
-            <input type="radio" id="three" value="24" name="duration" v-model="picked">
-            <label for="three">2 jaar</label>
-            <br>
-            <input type="radio" id="four" value="36" name="duration" v-model="picked">
-            <label for="four">3 jaar</label>
-            <br>
-            <input type="radio" id="five" value="48" name="duration" v-model="picked">
-            <label for="five">4 jaar</label>
-            <br>
-            <span>Picked: {{ picked }}</span>
-        </form> -->
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
-    data() {
-        return{
-            picked: ""
-        }
+    computed: {
+      duration () {
+        return this.$store.state.duration
+      }
     },
+    methods: {
+      updateDuration (e) {
+        this.$store.commit('updateDuration', e.target.value)
+      }
+    }
 }
 
 
@@ -75,7 +63,7 @@ label {
     display: block;
     text-align: center;
     font-family: 'Bangers', cursive;
-
+    transform: skewX(15deg) skewY(1deg);
 }
 
 .donate-now {
