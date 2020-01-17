@@ -5,8 +5,7 @@
           <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
       </nav>
-      <h1>Studieschuld</h1>
-      <DebtChart />
+      <h1>Testimonials</h1>
       <nuxt-link class="next-button"  to="/graduate">
         <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
       </nuxt-link>

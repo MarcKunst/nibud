@@ -98,4 +98,12 @@ nav>a {
     padding: 1.5rem 0;
 }
 
+.next-button-img:hover {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
 </style>

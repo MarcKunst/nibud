@@ -9,7 +9,7 @@
          <p class="intro-text">Een begroting maken? Pfff, dat is toch nergens voor nodig. Toch kan het handig zijn om overzicht krijgen over jouw financi&#235;n!</p>
         <br>
         <p class="intro-text">Ook kun je jouw begroting vergelijken met andere studiegenoten.</p>
-        <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;margin:2rem 0;">
             <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="100%" height="100%" style="position:absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
         <nuxt-link class="next-button"  to="/budget-form">

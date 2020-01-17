@@ -11,14 +11,14 @@
           <img class="start-button-img" src="../assets/landingpage-arrow.png" alt="start button">
         </nuxt-link>
       <div class="nav-container">
-        <nav id="home-nav">
-          <nuxt-link class="to-budget"  to="#">
+        <div id="home-nav">
+          <nuxt-link class="to-budget"  to="/budget-intro">
             <img class="nav-img" src="../assets/calculator.png" alt="to budget page">
           </nuxt-link>
-          <nuxt-link class="to-stories"  to="#">
+          <nuxt-link class="to-stories"  to="/testimonials">
             <img class="nav-img" src="../assets/dude.png" alt="to stories page">
           </nuxt-link>
-        </nav>
+        </div>
       </div>
 
     </div>

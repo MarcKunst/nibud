@@ -2,23 +2,23 @@
     <div id="duration-container">
         <ul class="donate-now">
             <li>
-    <input type="radio" id="6months" value="6" name="duration" @input="updateDuration"/>
+    <input type="radio" id="6months" :value="6" name="duration" @input="updateDuration"/>
     <label for="6months">Een half jaar</label>
   </li>
   <li>
-    <input type="radio" id="12months" value="12" name="duration" @input="updateDuration" />
+    <input type="radio" id="12months" :value="12" name="duration" @input="updateDuration"/>
     <label for="12months">1 jaar</label>
   </li>
   <li>
-    <input type="radio" id="24months" value="24" name="duration" @input="updateDuration" />
+    <input type="radio" id="24months" :value="24" name="duration" @input="updateDuration"/>
     <label for="24months">2 jaar</label>
   </li>
   <li>
-    <input type="radio" id="36months" value="36" name="duration" @input="updateDuration" />
+    <input type="radio" id="36months" :value="36" name="duration" @input="updateDuration"/>
     <label for="36months">3 jaar</label>
   </li>
   <li>
-    <input type="radio" id="48months" value="48" name="duration" @input="updateDuration" />
+    <input type="radio" id="48months" :value="48" name="duration" @input="updateDuration"/>
     <label for="48months">4 jaar</label>
   </li>
 </ul>
@@ -26,22 +26,26 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapGetters, mapState } from 'vuex'
+
 
 export default {
+    data () {
+        return {
+        duration: 0
+        }
+    },
     computed: {
-      duration () {
-        return this.$store.state.duration
-      }
+        ...mapState({
+            duration: state => state.duration
+        })
     },
     methods: {
-      updateDuration (e) {
-        this.$store.commit('updateDuration', e.target.value)
-      }
+        updateDuration (e) {
+          this.$store.commit('updateDuration', +e.target.value)
+        }   
     }
 }
-
-
 </script>
 
 <style scoped>

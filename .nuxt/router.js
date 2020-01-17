@@ -9,6 +9,7 @@ const _b0239de0 = () => interopDefault(import('../pages/current_debt.vue' /* web
 const _0883aa70 = () => interopDefault(import('../pages/debt-result.vue' /* webpackChunkName: "pages/debt-result" */))
 const _30a17142 = () => interopDefault(import('../pages/graduate.vue' /* webpackChunkName: "pages/graduate" */))
 const _7358c5e7 = () => interopDefault(import('../pages/loan.vue' /* webpackChunkName: "pages/loan" */))
+const _7d0f9fab = () => interopDefault(import('../pages/testimonials.vue' /* webpackChunkName: "pages/testimonials" */))
 const _665aa7eb = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -44,6 +45,10 @@ export const routerOptions = {
     path: "/loan",
     component: _7358c5e7,
     name: "loan"
+  }, {
+    path: "/testimonials",
+    component: _7d0f9fab,
+    name: "testimonials"
   }, {
     path: "/",
     component: _665aa7eb,

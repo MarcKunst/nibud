@@ -21,13 +21,14 @@ export default {
     mounted() {
         this.fillData()
         Chart.defaults.scale.gridLines.display = false
-        Chart.defaults.global.defaultFontColor = '#fdfdfd';
+        Chart.defaults.global.defaultFontColor = '#fdfdfd'
         Chart.defaults.global.defaultFontFamily = "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+        Chart.defaults.global.legend.labels.boxWidth = 0
     },
     methods: {
         fillData(){
             this.datacollection = {
-                labels: ['Geen schuld', '€2500', '€7500', '€15000', '€25000', '€35000', '€45000'],
+                labels: ['Geen schuld', '€2.500', '€7.500', '€15.000', '€25.000', '€35.000', '€45.000'],
                 datasets: [
                     {
                     label: 'Aantal studenten (%)',
@@ -40,10 +41,6 @@ export default {
                     hoverBackgroundColor: "#91054D",
                     }
                 ]
-            }, {
-                legend: {
-                    display: false,
-                }
             }
         }
     }

@@ -47,7 +47,8 @@ export default {
         poepieHandler() {
             this.$store.dispatch('setLoan', this.poepie)
         }
-}}
+    }
+}
 </script>
 
 <style scoped>

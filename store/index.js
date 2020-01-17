@@ -1,11 +1,11 @@
 export const state = () => ({
     loanValue: 0,
-    currentDebt: 0,
+    debtValue: 0,
     duration: 0
 })
 
 export const getters = {
-    loanValue: (state) => state.loanValue
+    loanValue: (state) => state.loanValue,
 }
 
 export const actions = {
@@ -15,5 +15,8 @@ export const actions = {
 }
 
 export const mutations = {
-    loanMutation: (state, value) => (state.loanValue = value)
+    loanMutation: (state, value) => (state.loanValue = value),
+    updateDuration (state, duration) {
+        state.duration = duration
+      }
 }
