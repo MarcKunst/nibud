@@ -22,7 +22,7 @@ export default {
         this.fillData()
         Chart.defaults.scale.gridLines.display = false
         Chart.defaults.global.defaultFontColor = '#fdfdfd'
-        Chart.defaults.global.defaultFontFamily = "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+        Chart.defaults.global.defaultFontFamily = "Roboto, 'Helvetica Neue', Arial, sans-serif"
         Chart.defaults.global.legend.labels.boxWidth = 0
     },
     methods: {

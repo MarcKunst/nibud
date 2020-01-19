@@ -29,7 +29,7 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#3780AB, #9DAEB6);
+  background: linear-gradient(#860034, #BA84A7);
   padding: 0 2rem;
 }
 

@@ -1,25 +1,25 @@
 <template>
     <div id="slider-container">
         <h2 class="default--white">
-        Hoeveel leen jij per maand?
+        Hoe veel jaar leen je al voor je huidige of vorige studie?
         </h2>
         <div class="range-tips">
-            <p>&euro;0</p>
-            <p>&euro;1000</p>
+            <p>0</p>
+            <p>10</p>
         </div>
         <range-slider
             class="slider"
             min="0"
-            max="1000"
-            step="10"
-            v-model="loanNumber"
-            @change="loanNumberHandler"
+            max="10"
+            step="1"
+            v-model="prevStudieValue"
+            @change="studieHandler"
 
         >
         
         </range-slider>
         <div id="value-container">
-            <p class="value-text">&euro;{{ loanNumber }}</p>
+            <p class="value-text">{{ prevStudieValue }} jaar</p>
         </div>
     </div>
 </template>
@@ -33,18 +33,18 @@ import { mapGetters } from 'vuex'
 export default {
     data () {
         return {
-        loanNumber: 0
+        prevStudieValue: 0
         }
     },
     components: {
         RangeSlider
     },
     computed: {
-        ...mapGetters(['loanValue'])
+        ...mapGetters(['prevDuration'])
     },
     methods: {
-        loanNumberHandler() {
-            this.$store.dispatch('setLoan', this.loanNumber)
+        studieHandler() {
+            this.$store.dispatch('setPrevDuration', this.prevStudieValue*12)
         }
     }
 }
@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 #slider-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 h2 {
@@ -64,7 +64,7 @@ h2 {
     position: relative;
     justify-content: center;
     margin-top: 0;
-    height: 10rem;
+    height: 12rem;
     background-image: url(../assets/powblauw.png);
     background-position: center;
     background-size: contain;
@@ -76,7 +76,7 @@ h2 {
     font-size: 2.5rem;
     color: #fdfdfd;
     position: absolute;
-    top: 3.6rem;
+    top: 4.7rem;
 }
 
 p.default--white{
@@ -119,5 +119,6 @@ p.default--white{
   transition: opacity .2s;
   border-radius: 1rem;
 }
+
 
 </style>

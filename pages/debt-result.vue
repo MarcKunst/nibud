@@ -29,6 +29,7 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: linear-gradient(#000000, #4C7992);
   padding: 0 2rem;
 }

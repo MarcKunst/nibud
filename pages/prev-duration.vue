@@ -1,27 +1,24 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/">
+        <nuxt-link class="button--blank"  to="/loan">
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
       </nav>
-      <h1>Studieschuld</h1>
-      <Counter />
-      <Slider />
-      <nuxt-link class="next-button"  to="/prev-duration">
+      <h1>Hoe lang studeer je al?</h1>
+      <StudySlider />
+      <nuxt-link class="next-button"  to="/graduate">
         <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
       </nuxt-link>
   </section>
 </template>
 
 <script>
-import Counter from '~/components/Counter.vue'
-import Slider from '~/components/Slider.vue'
+import StudySlider from '~/components/StudySlider.vue'
 
 export default {
   components: {
-    Counter,
-    Slider
+    StudySlider
   }
 }
 </script>
