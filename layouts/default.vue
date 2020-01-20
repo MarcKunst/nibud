@@ -20,7 +20,7 @@ html {
 
 h1 {
   font-family: 'Bangers', cursive;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #fdfdfd;
   text-align: center;
 }

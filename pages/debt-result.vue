@@ -6,6 +6,7 @@
         </nuxt-link>
         </nav>
         <h1>De gemiddelde studieschulden worden telkens hoger</h1>
+        <AverageDebt />
         <YourDebt />
         <nuxt-link class="next-button"  to="/budget-intro">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
@@ -15,10 +16,12 @@
 
 <script>
 import YourDebt from '~/components/YourDebtResult.vue'
+import AverageDebt from '~/components/AverageDebtResult.vue'
 
 export default {
     components: {
-        YourDebt
+        YourDebt,
+        AverageDebt
   }
 }
 </script>

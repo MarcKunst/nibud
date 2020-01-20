@@ -31,7 +31,7 @@ export default {
       return `&euro; ${value.toFixed()}`;
     }
   }
-};
+}
 </script>
 
 <style scoped>

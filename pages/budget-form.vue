@@ -7,6 +7,7 @@
          </nav>
         <h1>Begroting opstellen</h1>
         <IncomeForm />
+        <ExpensesForm />
         <nuxt-link class="next-button"  to="/budget-intro">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
@@ -15,10 +16,12 @@
 
 <script>
 import IncomeForm from '~/components/IncomeForm.vue'
+import ExpensesForm from '~/components/ExpensesForm.vue'
 
 export default {
   components: {
-    IncomeForm
+    IncomeForm,
+    ExpensesForm
   }
 }
 </script>
@@ -29,7 +32,7 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#4C5896, #8B94BA);
+  background: linear-gradient(#3780AB, #9DAEB6);
   padding: 0 2rem;
 }
 
@@ -41,6 +44,7 @@ nav>a {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .next-button-img {

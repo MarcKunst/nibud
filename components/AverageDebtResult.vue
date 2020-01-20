@@ -1,8 +1,8 @@
 <template>
     <section>
-        <h2>jouw studieschuld</h2>
+        <h2>Gemiddelde studieschuld</h2>
         <div class="debt-circle">
-            <span>&euro;{{debtCalc}}</span>
+            <span>&euro;{{yourDebt}}</span>
         </div>
     </section>
 </template>
@@ -10,10 +10,9 @@
 <script>
 
 export default {
-    
-    computed: {
-        debtCalc() {
-            return (this.$store.state.prevDuration + this.$store.state.duration) * this.$store.state.loanValue
+    data() {
+        return {
+            yourDebt: "13100"
         }
     }
 }
@@ -37,10 +36,10 @@ h2 {
 }
 
 .debt-circle {
-    background: linear-gradient(#860034, #BA84A7);
+    background: linear-gradient(#4C5896, #8B94BA);
     border-radius: 8rem;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     margin: 0.8rem 0;
 }
 
@@ -49,8 +48,8 @@ span {
     text-align: center;
     width: 100%;
     display: block;
-    margin: 4rem 0;
+    margin: 3rem 0;
     font-family: 'Bangers', cursive;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 </style>
