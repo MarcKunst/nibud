@@ -7,7 +7,7 @@
       <h2 class="subtitle">
         Studentenbudget
       </h2>
-        <nuxt-link to="/loan">
+        <nuxt-link to="/debt-intro">
           <img class="start-button-img" src="../assets/landingpage-arrow.png" alt="start button">
         </nuxt-link>
       <div class="nav-container">

@@ -9,8 +9,8 @@
          <p class="intro-text">Een begroting maken? Pfff, dat is toch nergens voor nodig. Toch kan het handig zijn om overzicht krijgen over jouw financi&#235;n!</p>
         <br>
         <p class="intro-text">Ook kun je jouw begroting vergelijken met andere studiegenoten.</p>
-        <div style="width:100%;height:0;padding-bottom:56%;position:relative;margin:2rem 0;">
-            <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="100%" height="100%" style="position:absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <div class="gif-container">
+            <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="50%" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
         <nuxt-link class="next-button"  to="/budget-form">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
@@ -32,6 +32,16 @@ export default {
   flex-direction: column;
   background: linear-gradient(#3780AB, #9DAEB6);
   padding: 0 2rem;
+}
+
+.gif-container {
+    background-image: url(../assets/powpaars.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 nav>a {
