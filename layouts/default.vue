@@ -83,7 +83,7 @@ h1 {
 }
 
 .back-button-img {
-  width: 3rem;
+  width: 2.5rem;
 }
 
 nav {

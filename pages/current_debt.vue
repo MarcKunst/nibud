@@ -7,7 +7,7 @@
       </nav>
       <h1>Studieschuld</h1>
       <DebtChart />
-      <nuxt-link class="next-button"  to="/graduate">
+      <nuxt-link class="next-button"  to="/budget-intro">
         <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
       </nuxt-link>
   </section>
@@ -34,7 +34,7 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#4C5896, #8B94BA);
+  background: linear-gradient(#860034, #BA84A7);
   padding: 0 2rem;
 }
 

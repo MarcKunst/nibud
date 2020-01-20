@@ -8,7 +8,7 @@
         <h1>De gemiddelde studieschulden worden telkens hoger</h1>
         <AverageDebt />
         <YourDebt />
-        <nuxt-link class="next-button"  to="/budget-intro">
+        <nuxt-link class="next-button"  to="/current_debt">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
   </section>
@@ -33,7 +33,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(#000000, #4C7992);
+  background: linear-gradient(#860034, #BA84A7);
   padding: 0 2rem;
 }
 

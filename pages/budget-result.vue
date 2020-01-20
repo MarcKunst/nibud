@@ -1,28 +1,29 @@
 <template>
   <section class="container">
-      <nav>
-        <nuxt-link class="button--blank"  to="/budget-intro">
-            <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
-        </nuxt-link>
-         </nav>
-        <h1>Begroting opstellen</h1>
-        <IncomeForm />
-        <ExpensesForm />
-        <nuxt-link class="next-button"  to="/budget-result">
+        <nav>
+            <nuxt-link class="button--blank"  to="/debt-result">
+                <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
+            </nuxt-link>
+        </nav>
+        <h1>Dit is jouw begroting</h1>
+        <ResultIncome />
+        <ResultExpenses />
+        <p class="text"></p>
+        <nuxt-link class="next-button"  to="/budget-form">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
   </section>
 </template>
 
 <script>
-import IncomeForm from '~/components/IncomeForm.vue'
-import ExpensesForm from '~/components/ExpensesForm.vue'
+import ResultIncome from '~/components/BudgetResults/ResultIncome.vue'
+import ResultExpenses from '~/components/BudgetResults/ResultExpenses.vue'
 
 export default {
-  components: {
-    IncomeForm,
-    ExpensesForm
-  }
+    components: {
+        ResultIncome,
+        ResultExpenses
+    }
 }
 </script>
 
@@ -52,7 +53,7 @@ nav>a {
     margin: 0 auto;
 }
 
-.intro-text {
+.text {
     text-align: center;
     color: #fdfdfd;
     font-size: 0.9rem;

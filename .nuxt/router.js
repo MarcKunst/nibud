@@ -5,7 +5,9 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _7d518fa5 = () => interopDefault(import('../pages/budget-form.vue' /* webpackChunkName: "pages/budget-form" */))
 const _10d70c4a = () => interopDefault(import('../pages/budget-intro.vue' /* webpackChunkName: "pages/budget-intro" */))
+const _ded6ef84 = () => interopDefault(import('../pages/budget-result.vue' /* webpackChunkName: "pages/budget-result" */))
 const _b0239de0 = () => interopDefault(import('../pages/current_debt.vue' /* webpackChunkName: "pages/current_debt" */))
+const _2cff4969 = () => interopDefault(import('../pages/debt-intro.vue' /* webpackChunkName: "pages/debt-intro" */))
 const _0883aa70 = () => interopDefault(import('../pages/debt-result.vue' /* webpackChunkName: "pages/debt-result" */))
 const _30a17142 = () => interopDefault(import('../pages/graduate.vue' /* webpackChunkName: "pages/graduate" */))
 const _7358c5e7 = () => interopDefault(import('../pages/loan.vue' /* webpackChunkName: "pages/loan" */))
@@ -31,9 +33,17 @@ export const routerOptions = {
     component: _10d70c4a,
     name: "budget-intro"
   }, {
+    path: "/budget-result",
+    component: _ded6ef84,
+    name: "budget-result"
+  }, {
     path: "/current_debt",
     component: _b0239de0,
     name: "current_debt"
+  }, {
+    path: "/debt-intro",
+    component: _2cff4969,
+    name: "debt-intro"
   }, {
     path: "/debt-result",
     component: _0883aa70,
