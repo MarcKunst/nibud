@@ -10,7 +10,7 @@
         <br>
         <p class="intro-text">Ook kun je jouw begroting vergelijken met andere studiegenoten.</p>
         <div class="gif-container">
-            <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="50%" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="60%" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
         <nuxt-link class="next-button"  to="/budget-form">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
@@ -40,6 +40,7 @@ export default {
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
+    height: 20rem;
     display: flex;
     justify-content: center;
 }

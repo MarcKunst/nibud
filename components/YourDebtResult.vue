@@ -37,7 +37,7 @@ h2 {
 }
 
 .debt-circle {
-    background: linear-gradient(#860034, #BA84A7);
+    background: linear-gradient(#3780AB, #9DAEB6);
     border-radius: 8rem;
     width: 10rem;
     height: 10rem;

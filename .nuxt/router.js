@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _e7e7dbd8 = () => interopDefault(import('../pages/budget-compare.vue' /* webpackChunkName: "pages/budget-compare" */))
 const _7d518fa5 = () => interopDefault(import('../pages/budget-form.vue' /* webpackChunkName: "pages/budget-form" */))
 const _10d70c4a = () => interopDefault(import('../pages/budget-intro.vue' /* webpackChunkName: "pages/budget-intro" */))
 const _ded6ef84 = () => interopDefault(import('../pages/budget-result.vue' /* webpackChunkName: "pages/budget-result" */))
@@ -25,6 +26,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/budget-compare",
+    component: _e7e7dbd8,
+    name: "budget-compare"
+  }, {
     path: "/budget-form",
     component: _7d518fa5,
     name: "budget-form"

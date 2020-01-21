@@ -10,16 +10,6 @@
         <nuxt-link to="/debt-intro">
           <img class="start-button-img" src="../assets/landingpage-arrow.png" alt="start button">
         </nuxt-link>
-      <div class="nav-container">
-        <div id="home-nav">
-          <nuxt-link class="to-budget"  to="/budget-intro">
-            <img class="nav-img" src="../assets/calculator.png" alt="to budget page">
-          </nuxt-link>
-          <nuxt-link class="to-stories"  to="/testimonials">
-            <img class="nav-img" src="../assets/dude.png" alt="to stories page">
-          </nuxt-link>
-        </div>
-      </div>
 
     </div>
   </section>

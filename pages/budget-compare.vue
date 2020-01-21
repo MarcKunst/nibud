@@ -5,24 +5,20 @@
                 <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
             </nuxt-link>
         </nav>
-        <h1>Dit is jouw begroting</h1>
-        <ResultIncome />
-        <ResultExpenses />
-        <p class="text"></p>
-        <nuxt-link class="next-button"  to="/budget-compare">
+        <h1>Vergelijk jouw begroting met die van andere studenten</h1>
+        <BudgetCompare />
+        <nuxt-link class="next-button"  to="/budget-form">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
   </section>
 </template>
 
 <script>
-import ResultIncome from '~/components/BudgetResults/ResultIncome.vue'
-import ResultExpenses from '~/components/BudgetResults/ResultExpenses.vue'
+import BudgetCompare from '~/components/BudgetCompare.vue'
 
 export default {
     components: {
-        ResultIncome,
-        ResultExpenses
+        BudgetCompare,
     }
 }
 </script>

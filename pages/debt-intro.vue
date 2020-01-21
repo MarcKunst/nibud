@@ -10,9 +10,9 @@
              Hey studenten! Ben jij ook benieuwd naar wat jouw huidige studieschuld is? Wij helpen jou graag op weg, klik op start.
          </p>
         <div class="gif-container">
-            <iframe src="https://giphy.com/embed/CjmvTCZf2U3p09Cn0h" width="50%" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/CjmvTCZf2U3p09Cn0h" width="45%" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
-        <nuxt-link class="next-button"  to="/budget-form">
+        <nuxt-link class="next-button"  to="/loan">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
   </section>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-
+    
 }
 </script>
 
