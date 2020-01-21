@@ -1,0 +1,34 @@
+[
+ {
+   "Jaar": 2017,
+   "UitgaveCollegegeld": 167,
+   "UitgaveHuur": 417,
+   "UitgaveZorgverzekering": 107,
+   "UitgaveTelefoon": 24,
+   "UitgaveBoodschappen": 128,
+   "UitgaveKleding": 51,
+   "UitgaveOntspanning": 148,
+   "UitgavenTotaal": 1042,
+   "InkomstenBijbaan": 332,
+   "InkomstenZorgtoeslag": 88,
+   "InkomstenHuurtoeslag": 354,
+   "InkomstenTotaal": 774,
+   "GemiddeldeSchuld": 13100
+ },
+ {
+   "Jaar": 2019,
+   "UitgaveCollegegeld": 174,
+   "UitgaveHuur": 434,
+   "UitgaveZorgverzekering": 111,
+   "UitgaveTelefoon": 25,
+   "UitgaveBoodschappen": 134,
+   "UitgaveKleding": 53,
+   "UitgaveOntspanning": 154,
+   "UitgavenTotaal": 1085,
+   "InkomstenBijbaan": 417,
+   "InkomstenZorgtoeslag": 104,
+   "InkomstenHuurtoeslag": 354,
+   "InkomstenTotaal": 575,
+   "GemiddeldeSchuld": 13100
+ }
+]
