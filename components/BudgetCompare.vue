@@ -14,17 +14,28 @@ export default {
     },
     data() {
         return {
+    //             job: 0,
+    // healthCareAllowance: 0,
+    // housingAllowance: 0,
+    // parents: 0,
+    // othersIncome: 0,
             datacollection: null,
             loaded: false,
-            income: [600, BudgetData[1].InkomstenTotaal],
-            expenses: [1000, 1084],
-
-
-        }
-    },
-    computed: {
-        totalIncome() {
-            return BudgetData[1].InkomstenTotaal.value;
+            income: [this.$store.state.job +
+                    this.$store.state.healthCareAllowance +
+                    this.$store.state.housingAllowance +
+                    this.$store.state.parents +
+                    this.$store.state.othersIncome
+                    , BudgetData[1].InkomstenTotaal],
+            expenses: [this.$store.state.tuitionFeesCost +
+                    this.$store.state.housingCost +
+                    this.$store.state.healthInsuranceCost +
+                    this.$store.state.phoneCost +
+                    this.$store.state.groceriesCost +
+                    this.$store.state.clothingCost +
+                    this.$store.state.leasureCost +
+                    this.$store.state.othersCost
+                    , BudgetData[1].UitgavenTotaal]
         }
     },
     mounted() {

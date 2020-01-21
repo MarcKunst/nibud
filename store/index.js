@@ -20,7 +20,6 @@ export const state = () => ({
     clothingCost: 0,
     leasureCost: 0,
     othersCost: 0
-
 })
 
 export const getters = {
