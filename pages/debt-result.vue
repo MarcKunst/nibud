@@ -6,8 +6,8 @@
         </nuxt-link>
         </nav>
         <h1>De gemiddelde studieschulden worden telkens hoger</h1>
-        <AverageDebt />
         <YourDebt />
+        <AverageDebt />
         <nuxt-link class="next-button"  to="/current_debt">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>

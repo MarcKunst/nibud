@@ -14,11 +14,6 @@ export default {
     },
     data() {
         return {
-    //             job: 0,
-    // healthCareAllowance: 0,
-    // housingAllowance: 0,
-    // parents: 0,
-    // othersIncome: 0,
             datacollection: null,
             loaded: false,
             income: [this.$store.state.job +

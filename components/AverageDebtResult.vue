@@ -2,7 +2,7 @@
     <section>
         <h2>Gemiddelde studieschuld</h2>
         <div class="debt-circle">
-            <span>&euro;{{yourDebt}}</span>
+            <span>&euro;{{averageDebt}}</span>
         </div>
     </section>
 </template>
@@ -12,7 +12,7 @@
 export default {
     data() {
         return {
-            yourDebt: "13100"
+            averageDebt: "13100"
         }
     }
 }

@@ -1,7 +1,7 @@
 <template>
   <section class="container-testimonials">
       <nav>
-        <nuxt-link class="button--blank"  to="/loan">
+        <nuxt-link class="button--blank"  to="/budget-compare">
           <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
       </nav>
@@ -18,18 +18,7 @@
                 <code>audio</code> element.
             </audio>
       </section>
-      <section class="testemonial-wrapper">
-          <h2>Barney (26)</h2>
-          <img class="testimonials-img" src="../assets/thedude.png" alt="Nejankie">
-          <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h3>
-            <audio
-                controls
-                src="/media/examples/t-rex-roar.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-            </audio>
-      </section>
-      <nuxt-link class="next-button"  to="/graduate">
+      <nuxt-link class="next-button"  to="/thanks">
         <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
       </nuxt-link>
   </section>
