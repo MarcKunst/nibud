@@ -20,7 +20,7 @@ The site is full of audio stories from students who tell about their own experie
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6ed0c348-6f16-445f-9792-d917b9cf16df/deploy-status)](https://app.netlify.com/sites/stubu/deploys)
 
 ## Build Setup
-I assume that you have already installed node and npm on your computer. If this is not the case. make sure you do this before you install this project. Select the links below for more information about installing [node](https://nodejs.org/en/) and [npm]https://www.npmjs.com/
+I assume that you have already installed node and npm on your computer. If this is not the case. make sure you do this before you install this project. Select the links below for more information about installing [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)
 
 When you have installed node and npm it is time to get the app working. Follow the following steps:
 
