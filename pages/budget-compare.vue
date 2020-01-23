@@ -7,7 +7,7 @@
         </nav>
         <h1>Vergelijk jouw begroting met die van andere studenten</h1>
         <BudgetCompare />
-        <nuxt-link class="next-button"  to="/testimonials">
+        <nuxt-link class="next-button"  to="/testimonials-intro">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
   </section>

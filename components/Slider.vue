@@ -1,7 +1,7 @@
 <template>
     <div id="slider-container">
-        <h2 class="default--white">
-        Hoeveel leen jij per maand?
+        <h2 class="intro-text">
+        Geef aan hoeveel jij per maand leent?
         </h2>
         <div class="range-tips">
             <p>&euro;0</p>
@@ -14,9 +14,7 @@
             step="10"
             v-model="loanNumber"
             @change="loanNumberHandler"
-
         >
-        
         </range-slider>
         <div id="value-container">
             <p class="value-text">&euro;{{ loanNumber }}</p>

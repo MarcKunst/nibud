@@ -1,6 +1,6 @@
 <template>
     <div id="counter-container">
-        <p class="loan-info-text">
+        <p class="intro-text">
             Wist je dat de gemiddelde student
         </p>
         <animated-number class="loan-average"
@@ -8,7 +8,7 @@
         :formatValue="formatToPrice" 
         :duration="1000"
         />
-        <p class="loan-info-text">
+        <p class="intro-text">
         leent per maand?
       </p>
     </div>
@@ -36,16 +36,11 @@ export default {
 
 <style scoped>
 #counter-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
-.loan-info-text {
-    font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 1rem;
-    color: #fdfdfd;
-    text-align: center;
+.intro-text {
+    margin: 0.3rem 0;
 }
 
 .loan-average {

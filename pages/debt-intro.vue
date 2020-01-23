@@ -10,10 +10,15 @@
              Hey studenten! Ben jij ook benieuwd naar wat jouw huidige studieschuld is? Wij helpen jou graag op weg, klik op start.
          </p>
         <div class="gif-container">
-            <iframe src="https://giphy.com/embed/CjmvTCZf2U3p09Cn0h" width="45%" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/CjmvTCZf2U3p09Cn0h" width="45%" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
+        <div class="next-button-container">
         <nuxt-link class="next-button"  to="/loan">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+        </nuxt-link>
+        </div>
+        <nuxt-link class="skip-button"  to="/budget-intro">
+            Ga gelijk jouw begroting uitrekenen
         </nuxt-link>
   </section>
 </template>
@@ -48,12 +53,6 @@ nav>a {
     padding: 1.5rem 0;
 }
 
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .next-button-img {
     width: 12rem;
     margin: 1rem auto;
@@ -63,6 +62,15 @@ nav>a {
     text-align: center;
     color: #fdfdfd;
     font-size: 0.9rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0;
+}
+
+.skip-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fdfdfd;
+    font-size: 0.8rem;
+    text-align: center;
 }
 </style>

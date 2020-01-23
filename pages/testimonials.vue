@@ -92,15 +92,9 @@ nav>a {
 }
 
 .intro-text {
-    text-align: center;font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 1rem;
-    color: #fdfdfd;
-    margin: 2rem 0;
-    height: 5rem;
+
     border-bottom: 1px solid #fdfdfd;
-    box-sizing: content-box;
+    padding-bottom: 1rem;
 }
 
 </style>

@@ -1,28 +1,29 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/current_debt">
+        <nuxt-link class="button--blank"  to="/budget-compare">
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
          </nav>
-        <h1>jouw begroting</h1>
-         <p class="intro-text">Een begroting maken? Pfff, dat is toch nergens voor nodig. Toch kan het handig zijn om overzicht krijgen over jouw financi&#235;n! 
-             Want dan weet je precies wat je inkomsten en uitgaven zijn.</p>
+        <h1>Een studieschuld hebben is niet het eind van de wereld!</h1>
+         <p class="intro-text">
+             Wil je meer weten over de financi&#235;n van andere studenten? Lees en/of luister naar verhalen van medestudenten. Let's go!
+         </p>
         <div class="gif-container">
-            <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="55%" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/wKdb3kFLjf1Injor3J" width="40%" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
-        <nuxt-link class="next-button"  to="/budget-form">
+        <nuxt-link class="next-button"  to="/testimonials">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
-        <nuxt-link class="skip-button"  to="/testimonials-intro">
-            Ga gelijk naar lezen en luisteren naar andere studenten
+        <nuxt-link class="skip-button"  to="/thanks">
+            Deze stap overslaan
         </nuxt-link>
   </section>
 </template>
 
 <script>
 export default {
-
+    
 }
 </script>
 
@@ -32,12 +33,12 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#3780AB, #9DAEB6);
+  background: linear-gradient(#4C5896, #8B94BA);
   padding: 0 2rem;
 }
 
 .gif-container {
-    background-image: url(../assets/powpaars.png);
+    background-image: url(../assets/powroze.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -58,15 +59,14 @@ nav>a {
 
 .next-button-img {
     width: 12rem;
-    margin: 0 auto 1rem;
+    margin: 0rem auto 1rem;
 }
 
 .intro-text {
     text-align: center;
     color: #fdfdfd;
     font-size: 0.9rem;
-    margin: 1rem 0;
-    font-weight: 500;
+    margin: 2rem 0 0;
 }
 
 .skip-button {

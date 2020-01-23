@@ -7,9 +7,11 @@
       </nav>
       <h1>Hoe lang studeer je al?</h1>
       <StudySlider />
-      <nuxt-link class="next-button"  to="/graduate">
-        <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-      </nuxt-link>
+      <div class="next-button-container">
+        <nuxt-link class="next-button"  to="/graduate">
+            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+        </nuxt-link>
+      </div>
   </section>
 </template>
 
@@ -35,12 +37,6 @@ export default {
 
 nav>a {
     padding: 1.5rem 0;
-}
-
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .next-button-img {

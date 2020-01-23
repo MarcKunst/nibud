@@ -4,7 +4,7 @@
         <div class="debt-circle-smaller" v-if="(this.$store.state.prevDuration + this.$store.state.duration) * this.$store.state.loanValue < 13100">
             <span class="text-smaller">&euro;{{debtCalc}}</span>
         </div>
-        <div class="debt-circle-bigger" v-else="(this.$store.state.prevDuration + this.$store.state.duration) * this.$store.state.loanValue > 13100">
+        <div class="debt-circle-bigger" v-if="(this.$store.state.prevDuration + this.$store.state.duration) * this.$store.state.loanValue > 13100">
             <span class="text-bigger">&euro;{{debtCalc}}</span>
         </div>
     </section>

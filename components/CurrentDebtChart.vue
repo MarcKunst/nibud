@@ -28,7 +28,7 @@ export default {
     methods: {
         fillData(){
             this.datacollection = {
-                labels: ['Geen schuld', '€2.500', '€7.500', '€15.000', '€25.000', '€35.000', '€45.000'],
+                labels: ['Geen schuld', '€1.000 - €5.000', '€5.000 - €10.000', '€10.000 - €20.000', '€20.000 - €30.000', '€30.000 - €40.000', '€40.000 >'],
                 datasets: [
                     {
                     label: 'Aantal studenten (%)',
@@ -38,7 +38,7 @@ export default {
                     minBarLength: 6,
                     data: this.percentageStudents,
                     backgroundColor: "#fdfdfd",
-                    hoverBackgroundColor: "#91054D",
+                    hoverBackgroundColor: "#5E92B0",
                     }
                 ]
             }

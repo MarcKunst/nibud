@@ -106,4 +106,21 @@ nav>a {
     transform: rotate(-3deg);
 }
 
+.intro-text {
+   font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    color: #fdfdfd;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.next-button-container {
+    text-align: center;
+ }
+
+.next-button{
+    display: inline-block;
+}
+
 </style>

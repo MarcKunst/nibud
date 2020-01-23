@@ -1,7 +1,7 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/current_debt">
+        <nuxt-link class="button--blank"  to="/testimonials">
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
          </nav>
@@ -10,7 +10,7 @@
              Yes, dankje voor het lezen en/of luisteren naar andere studenten. Wij hopen dat je meer inzicht hebt gekregen over je financi&#235;n! En onthoud, je bent niet de enige met een studieschuld.
          </p>
         <div class="gif-container">
-            <iframe src="https://giphy.com/embed/CjmvTCZf2U3p09Cn0h" width="45%" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/KJg6Znn4V1Jcs" width="55%" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
   </section>
 </template>

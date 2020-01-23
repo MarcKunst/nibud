@@ -1,6 +1,6 @@
 <template>
     <div id="slider-container">
-        <h2 class="default--white">
+        <h2 class="intro-text">
         Hoe veel jaar leen je al voor je huidige of vorige studie?
         </h2>
         <div class="range-tips">

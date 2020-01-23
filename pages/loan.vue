@@ -1,16 +1,18 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/">
+        <nuxt-link class="button--blank"  to="/debt-intro">
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
       </nav>
-      <h1>Studieschuld</h1>
+      <h1>Hoeveel leen jij per maand?</h1>
       <Counter />
       <Slider />
-      <nuxt-link class="next-button"  to="/prev-duration">
-        <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-      </nuxt-link>
+      <div class="next-button-container">
+        <nuxt-link class="next-button"  to="/prev-duration">
+            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+        </nuxt-link>
+      </div>
   </section>
 </template>
 
@@ -40,11 +42,6 @@ nav>a {
     padding: 1.5rem 0;
 }
 
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
 .next-button-img {
     width: 12rem;
