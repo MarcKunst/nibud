@@ -111,7 +111,6 @@ h2 {
     text-align: center;
     color: #fdfdfd;
     font-size: 1rem;
-    margin-top: 1.5rem;
 
 }
 
