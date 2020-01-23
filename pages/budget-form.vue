@@ -8,9 +8,11 @@
         <h1>Begroting opstellen</h1>
         <IncomeForm />
         <ExpensesForm />
-        <nuxt-link class="next-button"  to="/budget-result">
-            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-        </nuxt-link>
+        <div class="next-button-container">
+            <nuxt-link class="next-button"  to="/budget-result">
+                <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+            </nuxt-link>
+        </div>
   </section>
 </template>
 
@@ -40,16 +42,9 @@ nav>a {
     padding: 1.5rem 0;
 }
 
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
 .next-button-img {
     width: 12rem;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .intro-text {

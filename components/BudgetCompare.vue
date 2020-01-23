@@ -1,6 +1,9 @@
 <template>
-  <BarChart class="barchart" :chart-data="datacollection">
+<div class="bar-container">
+      <BarChart class="barchart" :chart-data="datacollection">
   </BarChart>
+</div>
+
   
 </template>
 
@@ -79,6 +82,27 @@ export default {
 
 .barchart {
     margin: 3rem 0;
+
+}
+
+.bar-container {
+    width: 100%;
+}
+
+@media only screen and (min-width : 768px) {
+
+    .bar-container {
+        width: 50%;
+    }
+
+}
+
+@media only screen  and (min-width : 1224px)  {
+
+    .bar-container {
+        width: 15%;
+        height: 15%;
+    }
 
 }
 </style>

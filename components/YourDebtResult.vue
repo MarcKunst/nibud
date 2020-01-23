@@ -1,11 +1,19 @@
 <template>
     <section>
-        <h2>jouw studieschuld</h2>
-        <div class="debt-circle-smaller" v-if="(this.$store.state.prevDuration + this.$store.state.duration) * this.$store.state.loanValue < 13100">
+        <h2>jouw verwachte studieschuld:</h2>
+        <div class="debt-circle-smaller" v-if="(this.$store.state.prevDuration + this.$store.state.postDuration) * this.$store.state.loanValue <= 13100">
             <span class="text-smaller">&euro;{{debtCalc}}</span>
         </div>
-        <div class="debt-circle-bigger" v-if="(this.$store.state.prevDuration + this.$store.state.duration) * this.$store.state.loanValue > 13100">
+        <div class="debt-circle-bigger" v-if="(this.$store.state.prevDuration + this.$store.state.postDuration) * this.$store.state.loanValue > 13100">
             <span class="text-bigger">&euro;{{debtCalc}}</span>
+        </div>
+
+        <h2>Gemiddelde studieschuld:</h2>
+        <div class="average-circle-smaller" v-if="(this.$store.state.prevDuration + this.$store.state.postDuration) * this.$store.state.loanValue >= 13100">
+            <span class="text-smaller">&euro;13100</span>
+        </div>
+        <div class="average-circle-bigger" v-if="(this.$store.state.prevDuration + this.$store.state.postDuration) * this.$store.state.loanValue < 13100">
+            <span class="text-bigger">&euro;13100</span>
         </div>
     </section>
 </template>
@@ -15,14 +23,8 @@
 export default {
     computed: {
         debtCalc() {
-            return (this.$store.state.prevDuration + this.$store.state.duration) * this.$store.state.loanValue
+            return (this.$store.state.prevDuration + this.$store.state.postDuration) * this.$store.state.loanValue
         }
-    },
-    methods() {
-        const bubble = document.querySelector(div)
-        const classList = bubble.classList()
-        
-        
     }
 }
 </script>
@@ -55,7 +57,7 @@ span {
 }
 
 .debt-circle-smaller {
-    background: linear-gradient(#3780AB, #9DAEB6);
+    background: linear-gradient(#9DAEB6, #3780AB);
     border-radius: 8rem;
     width: 6rem;
     height: 6rem;
@@ -63,7 +65,23 @@ span {
 }
 
 .debt-circle-bigger {
-    background: linear-gradient(#3780AB, #9DAEB6);
+    background: linear-gradient(#9DAEB6, #3780AB);
+    border-radius: 8rem;
+    width: 10rem;
+    height: 10rem;
+    margin: 0.8rem 0;
+}
+
+.average-circle-smaller {
+    background: linear-gradient(#7F89AD, #6F79AA);
+    border-radius: 8rem;
+    width: 6rem;
+    height: 6rem;
+    margin: 0.8rem 0;
+}
+
+.average-circle-bigger {
+    background: linear-gradient(#7F89AD, #6F79AA);
     border-radius: 8rem;
     width: 10rem;
     height: 10rem;

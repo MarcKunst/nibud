@@ -1,27 +1,26 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/graduate">
+        <nuxt-link class="button--blank"  to="/post-duration">
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
         </nav>
-        <h1>De gemiddelde studieschulden worden telkens hoger</h1>
+        <h1>Vergelijk jouw verwachte studieschuld</h1>
         <YourDebt />
-        <AverageDebt />
-        <nuxt-link class="next-button"  to="/current_debt">
-            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-        </nuxt-link>
+        <div class="next-button-container">
+            <nuxt-link class="next-button"  to="/current_debt">
+                <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+            </nuxt-link>
+        </div>
   </section>
 </template>
 
 <script>
 import YourDebt from '~/components/YourDebtResult.vue'
-import AverageDebt from '~/components/AverageDebtResult.vue'
 
 export default {
     components: {
-        YourDebt,
-        AverageDebt
+        YourDebt
   }
 }
 </script>
@@ -37,18 +36,16 @@ export default {
   padding: 0 2rem;
 }
 
+h1 {
+    margin-bottom: 1rem;
+}
+
 nav>a {
     padding: 1.5rem 0;
 }
 
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .next-button-img {
     width: 12rem;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 </style>

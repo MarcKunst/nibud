@@ -8,7 +8,7 @@
       <h1>Hoe lang studeer je al?</h1>
       <StudySlider />
       <div class="next-button-container">
-        <nuxt-link class="next-button"  to="/graduate">
+        <nuxt-link class="next-button"  to="/post-duration">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
       </div>

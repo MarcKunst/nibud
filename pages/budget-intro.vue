@@ -11,9 +11,11 @@
         <div class="gif-container">
             <iframe src="https://giphy.com/embed/xox9kxPMcM81y" width="55%" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
-        <nuxt-link class="next-button"  to="/budget-form">
-            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-        </nuxt-link>
+        <div class="next-button-container">
+            <nuxt-link class="next-button"  to="/budget-form">
+                <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+            </nuxt-link>
+        </div>
         <nuxt-link class="skip-button"  to="/testimonials-intro">
             Ga gelijk naar lezen en luisteren naar andere studenten
         </nuxt-link>
@@ -50,23 +52,9 @@ nav>a {
     padding: 1.5rem 0;
 }
 
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .next-button-img {
     width: 12rem;
     margin: 0 auto 1rem;
-}
-
-.intro-text {
-    text-align: center;
-    color: #fdfdfd;
-    font-size: 0.9rem;
-    margin: 1rem 0;
-    font-weight: 500;
 }
 
 .skip-button {

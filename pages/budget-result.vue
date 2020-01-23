@@ -1,28 +1,27 @@
 <template>
   <section class="container">
         <nav>
-            <nuxt-link class="button--blank"  to="/debt-result">
+            <nuxt-link class="button--blank"  to="/budget-form">
                 <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
             </nuxt-link>
         </nav>
         <h1>Dit is jouw begroting</h1>
         <ResultIncome />
-        <ResultExpenses />
         <p class="text"></p>
-        <nuxt-link class="next-button"  to="/budget-compare">
-            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-        </nuxt-link>
+        <div class="next-button-container">
+            <nuxt-link class="next-button"  to="/budget-compare">
+                <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+            </nuxt-link>
+        </div>
   </section>
 </template>
 
 <script>
 import ResultIncome from '~/components/BudgetResults/ResultIncome.vue'
-import ResultExpenses from '~/components/BudgetResults/ResultExpenses.vue'
 
 export default {
     components: {
-        ResultIncome,
-        ResultExpenses
+        ResultIncome
     }
 }
 </script>
@@ -39,13 +38,6 @@ export default {
 
 nav>a {
     padding: 1.5rem 0;
-}
-
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1rem;
 }
 
 .next-button-img {

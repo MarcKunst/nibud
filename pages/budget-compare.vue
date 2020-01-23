@@ -7,9 +7,11 @@
         </nav>
         <h1>Vergelijk jouw begroting met die van andere studenten</h1>
         <BudgetCompare />
-        <nuxt-link class="next-button"  to="/testimonials-intro">
-            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-        </nuxt-link>
+        <div class="next-button-container">
+            <nuxt-link class="next-button"  to="/testimonials-intro">
+                <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+            </nuxt-link>
+        </div>        
   </section>
 </template>
 
@@ -35,13 +37,6 @@ export default {
 
 nav>a {
     padding: 1.5rem 0;
-}
-
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1rem;
 }
 
 .next-button-img {

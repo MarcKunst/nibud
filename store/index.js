@@ -2,7 +2,8 @@ export const state = () => ({
     //Debt values
     loanValue: 0,
     prevDuration: 0,
-    duration: 0,
+    postDuration: 0,
+    // duration: 0,
 
     //Income values
     job: 0,
@@ -26,6 +27,7 @@ export const getters = {
     //Debt getters
     loanValue: (state) => state.loanValue,
     prevDuration: (state) => state.prevDuration,
+    postDuration: (state) => state.postDuration,
 
     //Income getters
     job: (state) => state.job,
@@ -51,6 +53,9 @@ export const actions = {
     },
     setPrevDuration({commit}, value) {
         commit('prevMutation', value)
+    },
+    setPostDuration({commit}, value) {
+        commit('postMutation', value)
     },
 
     //Income actions
@@ -95,7 +100,8 @@ export const mutations = {
     //Debt mutations
     loanMutation: (state, value) => (state.loanValue = value),
     prevMutation: (state, value) => (state.prevDuration = value),
-    updateDuration: (state, duration) => (state.duration = duration),
+    postMutation: (state, value) => (state.postDuration = value),
+    // updateDuration: (state, duration) => (state.duration = duration),
 
     //Income mutations
     updateJob: (state, number) => (state.job = number),

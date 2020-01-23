@@ -12,9 +12,11 @@
         <div class="gif-container">
             <iframe src="https://giphy.com/embed/wKdb3kFLjf1Injor3J" width="40%" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
-        <nuxt-link class="next-button"  to="/testimonials">
-            <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-        </nuxt-link>
+        <div class="next-button-container">
+            <nuxt-link class="next-button"  to="/testimonials">
+                <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+            </nuxt-link>
+        </div>             
         <nuxt-link class="skip-button"  to="/thanks">
             Deze stap overslaan
         </nuxt-link>
@@ -49,12 +51,6 @@ export default {
 
 nav>a {
     padding: 1.5rem 0;
-}
-
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .next-button-img {

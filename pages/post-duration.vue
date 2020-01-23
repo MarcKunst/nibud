@@ -5,20 +5,22 @@
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
       </nav>
-      <h1>Hoelang verwacht je dat je studie nog duurt?</h1>
-      <SelectDuration />
+      <h1>Hoelang verwacht je dat je nog studeert?</h1>
+      <PostStudySlider />
+      <div class="next-button-container">
         <nuxt-link class="next-button"  to="/debt-result">
             <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
         </nuxt-link>
+      </div>
   </section>
 </template>
 
 <script>
-import SelectDuration from '~/components/SelectDuration.vue'
+import PostStudySlider from '~/components/PostStudySlider.vue'
 
 export default {
   components: {
-    SelectDuration
+    PostStudySlider
   }
 }
 </script>
@@ -37,15 +39,8 @@ nav>a {
     padding: 1.5rem 0;
 }
 
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .next-button-img {
     width: 12rem;
     margin: 0 auto;
 }
-
 </style>

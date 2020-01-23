@@ -1,7 +1,10 @@
 <template>
-  <BarChart :chart-data="datacollection">
+<div class="bar-container">
+      <BarChart :chart-data="datacollection">
       
   </BarChart>
+</div>
+
 </template>
 
 <script>
@@ -48,5 +51,26 @@ export default {
 </script>
 
 <style scoped>
+
+.bar-container {
+    width: 100%;
+}
+
+@media only screen and (min-width : 768px) {
+
+    .bar-container {
+        width: 50%;
+    }
+
+}
+
+@media only screen  and (min-width : 1224px)  {
+
+    .bar-container {
+        width: 15%;
+        height: 15%;
+    }
+
+}
 
 </style>

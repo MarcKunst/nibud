@@ -14,9 +14,11 @@
         Deze cijfers komen uit een enquête voor studenten van de Hogeschool van Amsterdam.
       </p>
       <DebtChart />
-      <nuxt-link class="next-button"  to="/budget-intro">
-        <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
-      </nuxt-link>
+        <div class="next-button-container">
+            <nuxt-link class="next-button"  to="/budget-intro">
+                <img class="next-button-img" src="../assets/rectangle.png" alt="next page button">
+            </nuxt-link>
+        </div>      
   </section>
 </template>
 
@@ -59,12 +61,6 @@ h1 {
 
 nav>a {
     padding: 1.5rem 0;
-}
-
-.next-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .next-button-img {

@@ -10,8 +10,8 @@ const _ded6ef84 = () => interopDefault(import('../pages/budget-result.vue' /* we
 const _b0239de0 = () => interopDefault(import('../pages/current_debt.vue' /* webpackChunkName: "pages/current_debt" */))
 const _2cff4969 = () => interopDefault(import('../pages/debt-intro.vue' /* webpackChunkName: "pages/debt-intro" */))
 const _0883aa70 = () => interopDefault(import('../pages/debt-result.vue' /* webpackChunkName: "pages/debt-result" */))
-const _30a17142 = () => interopDefault(import('../pages/graduate.vue' /* webpackChunkName: "pages/graduate" */))
 const _7358c5e7 = () => interopDefault(import('../pages/loan.vue' /* webpackChunkName: "pages/loan" */))
+const _45ef1aba = () => interopDefault(import('../pages/post-duration.vue' /* webpackChunkName: "pages/post-duration" */))
 const _773f0ff2 = () => interopDefault(import('../pages/prev-duration.vue' /* webpackChunkName: "pages/prev-duration" */))
 const _7d0f9fab = () => interopDefault(import('../pages/testimonials.vue' /* webpackChunkName: "pages/testimonials" */))
 const _19b3784a = () => interopDefault(import('../pages/testimonials-intro.vue' /* webpackChunkName: "pages/testimonials-intro" */))
@@ -56,13 +56,13 @@ export const routerOptions = {
     component: _0883aa70,
     name: "debt-result"
   }, {
-    path: "/graduate",
-    component: _30a17142,
-    name: "graduate"
-  }, {
     path: "/loan",
     component: _7358c5e7,
     name: "loan"
+  }, {
+    path: "/post-duration",
+    component: _45ef1aba,
+    name: "post-duration"
   }, {
     path: "/prev-duration",
     component: _773f0ff2,
