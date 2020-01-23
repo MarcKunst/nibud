@@ -112,7 +112,7 @@ nav>a {
     color: #fdfdfd;
     font-size: 0.9rem;
     margin: 1rem 0;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .next-button-container {

@@ -1,15 +1,17 @@
 <template>
   <section class="container">
     <div class="wrapper">
-      <h1 class="title">
-        Stubu
-      </h1>
-      <h2 class="subtitle">
-        Studentenbudget
-      </h2>
-        <nuxt-link to="/debt-intro">
+      <div class="title-holder">
+        <h1 class="title">
+            Stubu
+        </h1>
+        <h2 class="subtitle">
+           Studentenbudget
+        </h2>
+                <nuxt-link to="/debt-intro">
           <img class="start-button-img" src="../assets/landingpage-arrow.png" alt="start button">
         </nuxt-link>
+      </div>
 
     </div>
   </section>
@@ -38,12 +40,22 @@ export default {
   background-size: cover;
   width: 100%;
   height: 90vh;
+  position: relative;
+   display: flex;
+  justify-content: center;
+}
+
+.title-holder {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 12rem;
 
 }
 
 .title {
   font-size: 8rem;
-  margin-top: 13rem;
 }
 
 .subtitle {
@@ -85,4 +97,61 @@ export default {
   opacity: 0;
 }
 
+@media only screen and (min-width : 768px) {
+
+  .wrapper {
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+   display: flex;
+  justify-content: center;
+}
+
+.title-holder {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25rem;
+
+}
+
+.start-button-img {
+  width: 18rem;
+  margin-top: 18rem;
+}
+
+}
+
+
+@media only screen  and (min-width : 1224px)  {
+
+    .wrapper {
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-holder {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 14rem;
+
+}
+
+.start-button-img {
+  width: 18rem;
+  margin-top: 8rem;
+}
+}
 </style>

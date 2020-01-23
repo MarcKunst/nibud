@@ -5,7 +5,7 @@
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
          </nav>
-        <h1>Een studieschuld hebben is niet het eind van de wereld!</h1>
+        <h1>Een studieschuld hebben is niet het einde van de wereld!</h1>
          <p class="intro-text">
              Wil je meer weten over de financi&#235;n van andere studenten? Lees en/of luister naar verhalen van medestudenten. Let's go!
          </p>
@@ -61,7 +61,6 @@ nav>a {
 .intro-text {
     text-align: center;
     color: #fdfdfd;
-    font-size: 0.9rem;
     margin: 2rem 0 0;
 }
 
@@ -72,6 +71,7 @@ nav>a {
     color: #fdfdfd;
     font-size: 0.8rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 </style>

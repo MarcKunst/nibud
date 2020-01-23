@@ -64,6 +64,7 @@ nav>a {
     color: #fdfdfd;
     font-size: 0.8rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 </style>
