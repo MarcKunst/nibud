@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div>
+    <div class="wrapper">
       <h1 class="title">
         Stubu
       </h1>
@@ -15,6 +15,12 @@
   </section>
 </template>
 
+<script>
+export default {
+  transition: "default"
+}
+</script>
+
 <style scoped>
 .container {
   margin: 0 auto;
@@ -25,9 +31,19 @@
   background: linear-gradient(#000000, #4C7992);
 }
 
+.wrapper {
+  background-image: url(../assets/powroze.png);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+
+}
+
 .title {
   font-size: 8rem;
-  margin-top: 8rem;
+  margin-top: 13rem;
 }
 
 .subtitle {
@@ -39,6 +55,7 @@
 
 .start-button-img {
   width: 18rem;
+  margin-top: 8rem;
 }
 
 .nav-container{
@@ -56,4 +73,16 @@
 .nav-img {
   width: 8rem;
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
 </style>

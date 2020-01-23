@@ -130,6 +130,7 @@ span {
     width: 6rem;
     height: 6rem;
     margin: 0.8rem 0;
+    animation: 0.8s ease-in-out 0s 1 small;
 }
 
 .debt-circle-bigger {
@@ -138,6 +139,7 @@ span {
     width: 10rem;
     height: 10rem;
     margin: 0.8rem 0;
+    animation: 0.8s ease-in-out 0s 1 bigger;
 }
 
 .average-circle-smaller {
@@ -146,6 +148,7 @@ span {
     width: 6rem;
     height: 6rem;
     margin: 0.8rem 0;
+    animation: 0.8s ease-in-out 0s 1 small;
 }
 
 .average-circle-bigger {
@@ -154,6 +157,7 @@ span {
     width: 10rem;
     height: 10rem;
     margin: 0.8rem 0;
+    animation: 0.8s ease-in-out 0s 1 bigger;
 }
 
 .text-bigger {
@@ -164,5 +168,37 @@ span {
 .text-smaller {
     font-size: 1.6rem;
     margin: 2rem 0;
+}
+
+@keyframes small {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  50% {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  100% {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@keyframes bigger {
+  0% {
+    width: 0rem;
+    height: 0rem;
+  }
+
+  50% {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+  100% {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 </style>

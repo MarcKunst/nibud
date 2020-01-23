@@ -1,7 +1,7 @@
 <template>
   <section class="container">
       <nav>
-        <nuxt-link class="button--blank"  to="/current_debt">
+        <nuxt-link class="button--blank"  to="/">
             <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
          </nav>
@@ -73,4 +73,5 @@ nav>a {
     font-size: 0.8rem;
     text-align: center;
 }
+
 </style>
