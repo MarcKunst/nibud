@@ -5,7 +5,7 @@
           <img class="back-button-img" src="../assets/arrow-back.png" alt="back to previous page">
         </nuxt-link>
       </nav>
-      <h1>Een studieschuld hebben is niet het eind van de wereld!</h1>
+      <h1>Een studieschuld hebben is niet het einde van de wereld!</h1>
       <p class="intro-text">Lees en/of luister iedere maand naar de verhalen van andere studenten die praten over hun studieschuld en financi&#235;n!</p>
       <section class="testemonial-wrapper">
           <h2>Marc (26) Over toekomstzorgen</h2>
@@ -13,7 +13,7 @@
           <h3>“Ik maak me wel eens zorgen over de toekomst, hoe zit dat als ik later een hypotheek wil?”</h3>
             <audio
                 controls
-                src="../assets/soundclips/Marc-_interview.mp3">
+                src="../assets/soundclips/Marc-interviewkopie.mp3">
                 Your browser does not support the
                 <code>audio</code> element.
             </audio>
@@ -24,7 +24,7 @@
           <h3>“Ik schat dat ik nu op de 20 duizend euro studieschuld zit. Ik woon op mezelf in Amsterdam en mijn ouders dragen verder niks bij. Ik moet eigenlijk wel lenen, anders kan ik mijn huur bijna niet betalen”</h3>
             <audio
                 controls
-                src="../assets/soundclips/janice.mp3">
+                src="../assets/soundclips/janice-interview.mp3">
                 Your browser does not support the
                 <code>audio</code> element.
             </audio>

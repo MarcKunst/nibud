@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h2>jouw verwachte studieschuld:</h2>
+        <h2>Jouw inkomsten:</h2>
         <div class="debt-circle-smaller" 
             v-if="this.$store.state.job + 
             this.$store.state.healthCareAllowance + 
@@ -36,7 +36,7 @@
             <span class="text-bigger">&euro;{{incomeCalc}}</span>
         </div>
 
-        <h2>Gemiddelde studieschuld:</h2>
+        <h2>Jouw uitgaven:</h2>
         <div class="average-circle-smaller"
         v-if="this.$store.state.job + 
             this.$store.state.healthCareAllowance + 
